@@ -1,6 +1,9 @@
 eureka:
   instance:
     hostname: eureka-server1
+    status-page-url: http://${spring.cloud.client.ip-address}:${server.port}/swagger-ui.html
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
   client:
     service-url:
        defaultZone: http://eureka-server2:20002/eureka/

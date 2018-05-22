@@ -1,0 +1,14 @@
+server:
+  port: 19001
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://eureka-server1:20001/eureka/,http://eureka-server2:20002/eureka/
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    prefer-ip-address: true
+    status-page-url: http://${spring.cloud.client.ip-address}:${server.port}/swagger-ui.html
+spring:
+  application:
+    name: order-ms

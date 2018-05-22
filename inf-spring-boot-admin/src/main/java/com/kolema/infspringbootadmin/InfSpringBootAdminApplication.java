@@ -1,5 +1,6 @@
-package com.kolema.orderms;
+package com.kolema.infspringbootadmin;
 
+import de.codecentric.boot.admin.server.config.EnableAdminServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -7,13 +8,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
+@EnableAdminServer
 @EnableEurekaClient
 @SpringBootApplication
-public class OrderMsApplication {
+public class InfSpringBootAdminApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(OrderMsApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(InfSpringBootAdminApplication.class, args);
+    }
 
     @Configuration
     public static class SecurityPermitAllConfig extends WebSecurityConfigurerAdapter {

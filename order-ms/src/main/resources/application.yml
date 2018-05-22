@@ -12,3 +12,13 @@ eureka:
 spring:
   application:
     name: order-ms
+  boot:
+    admin:
+      client:
+        url: http://localhost:21000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

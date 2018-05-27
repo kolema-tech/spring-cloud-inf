@@ -1,4 +1,4 @@
-package com.kolema.mpgsms.controller.request;
+package com.kolema.orderms.service.mpgsmodel;
 
 import com.kolema.commonbusiness.Currency;
 import io.swagger.annotations.ApiModel;
@@ -13,6 +13,7 @@ import java.math.BigDecimal;
 
 /**
  * Summary:
+ *
  * @author zhenpeng
  */
 @ApiModel(value = "訂單信息")

@@ -1,4 +1,4 @@
-package com.kolema.mpgsms.controller;
+package com.kolema.commonbusiness;
 
 /**
  * Summary:
